@@ -1,0 +1,426 @@
+/* PC */
+@media (min-width: 77.5em) {
+    
+}
+
+/* > PC low resolution */
+@media (min-width: 64em) and (max-width: 77.4375em) {
+    .content .slider-img {
+        max-width: 100%;
+        height: 666px;
+        object-fit: contain;
+    }
+
+    .content .list-tour {
+        width: 98%;
+        margin-left: 10px;
+    }
+
+    .content .video-wine .video-img {
+        padding-top: 38.5%;
+    }
+
+    .content .popular-tours .popular-wine-img {
+        display: none;
+    }
+
+    #footer .logo-footer img {
+        width: 200px;
+        height: 60px;
+        object-fit: contain;
+    }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 63.9375em) {
+    .mt-130-90 {
+        margin-top: 90px;
+    }
+    .mt-50 {
+        margin-top: 50px;
+    }
+    :root {
+        --header-height: 69px;
+    }
+
+    #container {
+        overflow: hidden;
+        margin-top: var(--header-height);
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    
+    #header {
+        background-color: var(--primary-color);
+        position: fixed;
+        transition: all ease-in 0.2s;
+        top: 0;
+    }
+    
+    #header .lang-switcher {
+        display: none;
+    }
+
+    #header .user-login {
+        height: var(--header-height);
+        padding: 0 20px;
+        margin-right: 10px;
+    }
+
+    #header .user-login .user-icon {
+        font-size: 3.5rem;
+    }
+
+    #header .mobile-logo-img {
+        position: absolute;
+        display: block;
+        width: 113px;
+        height: 36px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #container .logo-img {
+        display: none;
+    }
+    
+    #header .mobile-menu-icon {
+        display: block;
+        position: absolute;
+        fill: #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+    }
+
+
+
+
+    /* Navigation responsive */
+    #container .mobile-nav {
+        display: none;
+        z-index: 1;
+        animation: dropDown ease-in-out 0.2s;
+    }
+    
+    #nav .nav-list {
+        display: block;
+        margin: 0;
+        position: fixed;
+        width: 80%;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+        overflow-y: scroll;
+        max-height: 400px;
+    }
+
+    #nav .nav-link {
+        border-bottom: 1px solid #ebebeb;
+        position: relative;
+        left: 40px;
+        padding: 12px 0;
+        width: 80%;
+    }
+
+    #nav .nav-icon-angle {
+        display: block;
+        position: absolute;
+        color: #212121;
+        right: 20%;
+        font-size: 1.6rem;
+        top: 13px;
+    }
+
+    #nav .nav-item::before {
+        display: none;
+    }
+
+    #nav .subnav-list {
+        position: relative;
+        top: -20px;
+        left: 30px;
+        margin: 0;
+        display: none;
+        box-shadow: none;
+        width: 90%;
+        animation: dropDownNoOpacity ease-in-out 0.2s;
+    }
+    
+    #nav .subnav-item {
+        width: 80%;
+    }
+
+    #nav .nav-item .sub-subnav-item:last-child {
+        margin-bottom: 0;
+    }
+
+    #nav .subnav-item:last-child {
+        margin-bottom: 0;
+    }
+
+    #nav .nav-item .subnav-link {
+        padding: 10px 0;
+        position: relative;
+        border-bottom: 1px solid #ebebeb;
+        left: 40px;
+        width: 100%;
+    }
+
+    #nav .nav-link::after,
+    #nav .nav-item .subnav-link::after,
+    #nav .nav-item .sub-subnav-link::after,
+    #nav .subnav2-list .subnav2-link::after {
+        display: none;
+    }
+
+    #nav .subnav-item:hover .sub-subnav-list,
+    #nav .nav-item:hover .subnav-list {
+        display: none;
+    }
+
+    .subnav-item .subnav-icon-angle {
+        top: 10px;
+    }
+
+    #nav .nav-item .sub-subnav-list {
+        position: relative;
+        top: -20px;
+        left: 30px;
+        margin: 0;
+        display: none;
+        box-shadow: none;
+        width: 90%;
+        transform-origin: top center;
+        animation: dropDownNoOpacity ease-in-out 0.2s;
+    }
+
+    #nav .nav-item .sub-subnav-link {
+        padding: 10px 0;
+        position: relative;
+        border-bottom: 1px solid #ebebeb;
+        left: 40px;
+        width: 100%;
+    }
+
+    #nav .nav-item.has-subnav2-list:hover .subnav2 {
+        display: none;
+    }
+
+    /* Slider */
+    .content .slider {
+        margin: 44px 0;
+    }
+
+    .content .slider-img {
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content .slider-btn-left,
+    .content .slider-btn-right {
+        display: none;
+    }
+
+    .content .chart-img {
+        width: 394px;
+        height: 262px;
+        margin-left: 10%;
+    }
+
+    .content .chart-content {
+        margin: 30px 30px 120px 30px;
+    }
+
+    .content .chart-heading {
+        font-size: 4rem;
+    }
+
+    .content .field-img {
+        background-size: 90% 90%;
+    }
+
+    .content .tour-holder-heading {
+        font-size: 5.8rem;
+    }
+
+    .content .tour-holder-des {
+        margin: 8px 40px;
+    }
+
+    .content .list-wrapper {
+        display: flex;
+    }
+
+    .content .list-img img{
+        object-fit: contain;
+    }
+
+    .content .blur {
+        width: 93%;
+        left: 11px;
+    }
+
+    .content .tour-des {
+        width: 90%;
+    }
+
+    .content .tour-des .tour-name {
+        margin-left: 35px;
+    }
+
+    .content .tour-des .tour-price {
+        margin-right: 5px;
+    }
+
+    .content .wine-data p {
+        margin: 0 36px;
+    }
+
+    .content .video-wine .video-img {
+        padding-top: 50%;
+    }
+
+    .content .video-wine .video-btn-inner {
+        top: 30%;
+    }
+
+    .content .popular-tours-holder {
+        margin: 0 30px 0 30px;
+    }
+
+    .content .popular-tours-des {
+        margin: 15px 0px 50px;
+    }
+
+    .content .popular-tours-heading {
+        font-size: 4rem;
+    }
+
+    .content .popular-tour-item .popular-tour-item-holder {
+        margin-left: 40px;
+    }
+
+    .content .popular-tour-item .popular-item-des {
+        margin: 0 20px 0 30px;
+    }
+
+    #footer {
+        padding: 100px 40px;
+    }
+
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    #footer .recent-post {
+        margin: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    #nav .nav-list {
+        margin: 0;
+        width: 100%;
+    }
+
+    #nav .nav-icon-angle {
+        right: 15%;
+    }
+
+    .content .slider {
+        margin: 44px 44px 0 44px;
+    }
+
+    .content .chart-img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .content .chart-heading {
+        font-size: 2.8rem;
+    }
+
+    .content .field-img {
+        background-size: 80% 80%;
+    }
+
+    .content .tour-holder-heading {
+        font-size: 3.5rem;
+    }
+
+    .content .blur {
+        width: 70%;
+        left: 63px;
+    }
+
+    .content .tour-des .tour-name {
+        margin-left: 75px;
+    }
+
+    .content .tour-des .tour-price {
+        margin-right: 35px;
+    }
+
+    .content .wine-data p {
+        margin: 0 60px;
+    }
+
+    .content .video-wine .video-img {
+        padding-top: 38.5%;
+    }
+
+    .content .popular-tours-holder {
+        margin: 0 30px;
+    }
+
+    .content .popular-tours-heading {
+        font-size: 2.8rem;
+    }
+
+    .content .popular-tour-item .popular-tour-item-holder {
+        margin-left: 30px;
+    }
+
+    .content .popular-tours .popular-wine-img {
+        left: 2%;
+    }
+
+    .content .popular-tours .popular-wine-img img {
+        transform: scale(0.8);
+    }
+
+    .back-to-top {
+        width: 50px;
+        height: 50px;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Modal */
+    .modal-container {
+        width: 100%;
+        margin: 0 25px;
+        min-height: 250px;
+    }
+
+    .modal-body-header,
+    .modal-body-des {
+        display: none;
+    }
+
+    .modal-footer {
+        bottom: -40px;
+    }
+}
