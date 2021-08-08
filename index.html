@@ -17,30 +17,40 @@
 <body>
     <div id="app">
         <header id="header">
-                <div class="info">
-                    <a href="" class="info-icon-link"><i class="info-icon far fa-envelope"></i>setsail@qode.com</a>
-                    <a href="" class="info-icon-link"><i class="info-icon fas fa-phone-alt"></i>1 562 867 5309</a>
-                    <a href="" class="info-icon-link"><i class="info-icon fal fa-map-marker-alt"></i>Broadway & Morris St, New York</a>
+                <div class="info hide-on-mobile-tablet">
+                    <a href="#" class="info-icon-link hide-on-mobile-tablet"><i class="info-icon far fa-envelope"></i>setsail@qode.com</a>
+                    <a href="#" class="info-icon-link hide-on-mobile-tablet"><i class="info-icon fas fa-phone-alt"></i>1 562 867 5309</a>
+                    <a href="#" class="info-icon-link hide-on-mobile-tablet"><i class="info-icon fal fa-map-marker-alt"></i>Broadway & Morris St, New York</a>
+                </div>
+                <a href="javascript:void(0);" class="mobile-menu-icon" onclick="menuClicked()">
+                    <svg class="qodef-setsail-burger" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="17px" viewBox="0 0 26 20" enable-background="new 0 0 26 20" xml:space="preserve">
+                    <rect x="10.5" width="13.7" height="2.4"></rect>
+                    <rect x="8" y="8.8" width="16.2" height="2.4"></rect>
+                    <rect x="1.7" y="17.6" width="22.5" height="2.4"></rect>
+                    </svg>
+                </a>
+                <div class="mobile-logo">
+                    <a href="#"><img class="mobile-logo-img" src="./assets/img/logo-mobile-img.png" alt="logo"></a>
                 </div>
                 <div class="header-right">
-                    <div class="social">
-                        <a class="social-link" href=""><i class="social-icon fab fa-twitter"></i></a>
-                        <a class="social-link" href=""><i class="social-icon fab fa-pinterest-p"></i></a>
-                        <a class="social-link" href=""><i class="social-icon fab fa-facebook-f"></i></a>
-                        <a class="social-link" href=""><i class="social-icon fab fa-instagram"></i></a>
+                    <div class="social hide-on-mobile-tablet">
+                        <a class="social-link" href="#"><i class="social-icon fab fa-twitter"></i></a>
+                        <a class="social-link" href="#"><i class="social-icon fab fa-pinterest-p"></i></a>
+                        <a class="social-link" href="#"><i class="social-icon fab fa-facebook-f"></i></a>
+                        <a class="social-link" href="#"><i class="social-icon fab fa-instagram"></i></a>
                     </div>
                     <div class="lang-switcher">
                         <span>English</span>
                         <i class="fal fa-angle-down"></i>
                         <ul class="lang-switcher-list">
                             <li class="lang-switcher-item">
-                                <a class="lang-switcher-link" href="">French</a>
+                                <a class="lang-switcher-link" href="#">French</a>
                             </li>
                             <li class="lang-switcher-item">
-                                <a class="lang-switcher-link" href="">German</a>
+                                <a class="lang-switcher-link" href="#">German</a>
                             </li>
                             <li class="lang-switcher-item">
-                                <a class="lang-switcher-link" href="">Italian</a>
+                                <a class="lang-switcher-link" href="#">Italian</a>
                             </li>
                         </ul>
                     </div>
@@ -56,223 +66,233 @@
                     <img class="logo-img" src="./assets/img/logo.png" alt="logo">
                 </div>
                 <div class="row">
-                    <div class="col l-12 m-0 c-0">
+                    <div class="col l-12 m-12 c-12 mobile-nav">
                         <nav id="nav">
                             <ul class="nav-list">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="">Home</a>
+                                    <a class="nav-link active" href="javascript:void(0);">Home</a>
+                                    <i class="nav-icon-angle far fa-angle-right"></i>
                                     <ul class="subnav-list">
                                         <li class="subnav-item">
-                                            <a class="subnav-link" href="">Travel Agency</a>
+                                            <a class="subnav-link" href="#">Travel Agency</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a class="subnav-link" href="">Winter Holidays</a>
+                                            <a class="subnav-link" href="#">Winter Holidays</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a class="subnav-link" href="">Exotic Destinations</a>
+                                            <a class="subnav-link" href="#">Exotic Destinations</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a class="subnav-link" href="">Summer Holidays</a>
+                                            <a class="subnav-link" href="#">Summer Holidays</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a class="subnav-link" href="">City Tours</a>
+                                            <a class="subnav-link" href="#">City Tours</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a class="subnav-link" href="">New Year Trips</a>
+                                            <a class="subnav-link" href="#">New Year Trips</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a class="subnav-link" href="">Destinations Carousel</a>
+                                            <a class="subnav-link" href="#">Destinations Carousel</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a class="subnav-link active" href="">Wine Tours</a>
+                                            <a class="subnav-link active" href="#">Wine Tours</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a class="subnav-link" href="">Vacation Showcase</a>
+                                            <a class="subnav-link" href="#">Vacation Showcase</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a class="subnav-link" href="">Landing</a>
+                                            <a class="subnav-link" href="#">Landing</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li  class="nav-item">
-                                    <a class="nav-link" href="">Pages</a>
+                                    <a class="nav-link" href="javascript:void(0);">Pages</a>
+                                    <i class="nav-icon-angle far fa-angle-right"></i>
                                     <ul class="subnav-list">
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">About Us</a>
+                                            <a href="#" class="subnav-link">About Us</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">What We Offer</a>
+                                            <a href="#" class="subnav-link">What We Offer</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">Our Team</a>
+                                            <a href="#" class="subnav-link">Our Team</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">Get In Touch</a>
+                                            <a href="#" class="subnav-link">Get In Touch</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">Contact Us</a>
+                                            <a href="#" class="subnav-link">Contact Us</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">FAQ Page</a>
+                                            <a href="#" class="subnav-link">FAQ Page</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">Coming Soon</a>
+                                            <a href="#" class="subnav-link">Coming Soon</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">Error Page</a>
+                                            <a href="#" class="subnav-link">Error Page</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li  class="nav-item">
-                                    <a class="nav-link" href="">Destinations</a>
+                                    <a class="nav-link" href="javascript:void(0);">Destinations</a>
+                                    <i class="nav-icon-angle far fa-angle-right"></i>
                                     <ul class="subnav-list">
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">Destination List</a>
+                                            <a href="#" class="subnav-link">Destination List</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">Destination Slider</a>
+                                            <a href="#" class="subnav-link">Destination Slider</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">Destination Item</a>
+                                            <a href="#" class="subnav-link">Destination Item</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li  class="nav-item">
-                                    <a class="nav-link" href="">Tours</a>
+                                    <a class="nav-link" href="javascript:void(0);">Tours</a>
+                                    <i class="nav-icon-angle far fa-angle-right"></i>
                                     <ul class="subnav-list">
-                                        <li class="subnav-item"><a href="" class="subnav-link">Standard List</a></li>
-                                        <li class="subnav-item"><a href="" class="subnav-link">Gallery List</a></li>
-                                        <li class="subnav-item"><a href="" class="subnav-link">Split List</a></li>
-                                        <li class="subnav-item"><a href="" class="subnav-link">Tour Item</a></li>
+                                        <li class="subnav-item"><a href="#" class="subnav-link">Standard List</a></li>
+                                        <li class="subnav-item"><a href="#" class="subnav-link">Gallery List</a></li>
+                                        <li class="subnav-item"><a href="#" class="subnav-link">Split List</a></li>
+                                        <li class="subnav-item"><a href="#" class="subnav-link">Tour Item</a></li>
                                     </ul>
                                 </li>
                                 <li  class="nav-item">
-                                    <a class="nav-link" href="">Blog</a>
+                                    <a class="nav-link" href="javascript:void(0);">Blog</a>
+                                    <i class="nav-icon-angle far fa-angle-right"></i>
                                     <ul class="subnav-list">
-                                        <li class="subnav-item"><a href="" class="subnav-link">Blog Masonry</a></li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">
+                                            <a href="#" class="subnav-link">Blog Masonry</a>
+                                        </li>
+                                        <li class="subnav-item">
+                                            <a href="#" class="subnav-link has-sub-subnav">
                                                 Blog Standard
                                             </a>
                                             <i class="subnav-icon-angle far fa-angle-right"></i>
                                             <ul class="sub-subnav-list">
                                                 <li class="sub-subnav-item">
-                                                    <a href="" class="sub-subnav-link">Right Sidebar</a>
+                                                    <a href="#" class="sub-subnav-link">Right Sidebar</a>
                                                 </li>
                                                 <li class="sub-subnav-item">
-                                                    <a href="" class="sub-subnav-link">Left Sidebar</a>
+                                                    <a href="#" class="sub-subnav-link">Left Sidebar</a>
                                                 </li>
                                                 <li class="sub-subnav-item">
-                                                    <a href="" class="sub-subnav-link">Without Sidebar</a>
+                                                    <a href="#" class="sub-subnav-link">Without Sidebar</a>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">
+                                            <a href="#" class="subnav-link has-sub-subnav">
                                                 Post Types
                                             </a>
                                             <i class="subnav-icon-angle far fa-angle-right"></i>
                                             <ul class="sub-subnav-list">
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Standard</a></li>
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Gallery</a></li>
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Link</a></li>
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Quote</a></li>
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Video</a></li>
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Audio</a></li>
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">No Sidebar</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Standard</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Gallery</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Link</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Quote</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Video</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Audio</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">No Sidebar</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <li  class="nav-item">
-                                    <a class="nav-link" href="">Shop</a>
+                                    <a class="nav-link" href="javascript:void(0);">Shop</a>
+                                    <i class="nav-icon-angle far fa-angle-right"></i>
+
                                     <ul class="subnav-list">
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">Product List</a>
+                                            <a href="#" class="subnav-link">Product List</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">Product Single</a>
+                                            <a href="#" class="subnav-link">Product Single</a>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">
+                                            <a href="#" class="subnav-link has-sub-subnav">
                                                 Shop Layouts
                                             </a>
                                             <i class="subnav-icon-angle far fa-angle-right"></i>
                                             <ul class="sub-subnav-list">
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Three Columns</a></li>
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Four Columns</a></li>
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Full Width</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Three Columns</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Four Columns</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Full Width</a></li>
                                             </ul>
                                         </li>
                                         <li class="subnav-item">
-                                            <a href="" class="subnav-link">
+                                            <a href="#" class="subnav-link has-sub-subnav">
                                                 Shop Pages
                                             </a>
                                             <i class="subnav-icon-angle far fa-angle-right"></i>
                                             <ul class="sub-subnav-list">
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">My Account</a></li>
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Cart</a></li>
-                                                <li class="sub-subnav-item"><a href="" class="sub-subnav-link">Checkout</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">My Account</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Cart</a></li>
+                                                <li class="sub-subnav-item"><a href="#" class="sub-subnav-link">Checkout</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
                                 <li  class="nav-item has-subnav2-list">
-                                    <a class="nav-link" href="">Elements</a>
+                                    <a class="nav-link" href="javascript:void(0);">Elements</a>
+                                    <i class="nav-icon-angle far fa-angle-right"></i>
                                     <div class="grid wide subnav2">
                                             <div class="subnav2-1">
                                                 <ul class="subnav2-list">
                                                     <h3>Featured</h3>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Tour List</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Tour Carousel</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Tours Filter</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Destination With Tours</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Destination List</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Destination Fullscreen Slider</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Fullscreen Sections</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Reviews Carousel</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Tour List</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Tour Carousel</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Tours Filter</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Destination With Tours</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Destination List</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Destination Fullscreen Slider</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Fullscreen Sections</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Reviews Carousel</a></li>
                                                 </ul>
                                             </div>
                                     
                                             <div class="subnav2-2">
                                                 <ul class="subnav2-list">
                                                     <h3>Presentation</h3>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Team</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Blog List</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Shop List</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Testimonials</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Banner</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Clients</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Parallax Section</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Video Button</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Team</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Blog List</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Shop List</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Testimonials</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Banner</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Clients</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Parallax Section</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Video Button</a></li>
                                                 </ul>
                                             </div>
                                             <div class="subnav2-3">
                                                 <ul class="subnav2-list">
                                                     <h3>Classic</h3>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Accordions</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Tabs</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Buttons</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Google Maps</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Contact Form</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Progress Bar</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Countdown</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Counters</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Call To Action</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Accordions</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Tabs</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Buttons</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Google Maps</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Contact Form</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Progress Bar</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Countdown</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Counters</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Call To Action</a></li>
                                                 </ul>
                                             </div>
                                             <div class="subnav2-4">
                                                 <ul class="subnav2-list last-subnav2">
                                                     <h3>Typography</h3>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Headings</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Columns</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Section Title</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Blockquote</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Dropcaps</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Highlights</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Icon With Text</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Separators</a></li>
-                                                    <li class="subnav2-item"><a href="" class="subnav2-link">Custom Font</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Headings</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Columns</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Section Title</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Blockquote</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Dropcaps</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Highlights</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Icon With Text</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Separators</a></li>
+                                                    <li class="subnav2-item"><a href="#" class="subnav2-link">Custom Font</a></li>
                                                 </ul>
                                             </div>
                                     </div>
@@ -285,28 +305,44 @@
     
                 <div class="content">
                     <div class="row slider">
-                        <div class="col l-8">
-                            <img class="slider-img" src="./assets/img/khu_vuon.jpg" alt="">
+                        <div class="col l-8 m-8 c-12">
+                            <div class="slides-img-1 fade">
+                                <img class="slider-img" src="./assets/img/slide_1.jpg" alt="">
+                            </div>
+                            <div class="slides-img-1 fade">
+                                <img class="slider-img" src="./assets/img/slide_3.jpg" alt="">
+                            </div>
+                            <div class="slides-img-1 fade">
+                                <img class="slider-img" src="./assets/img/slide_5.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="col l-4">
-                            <img class="slider-img" src="./assets/img/girl.jpg" alt="">
+                        <div class="col l-4 m-4 c-12">
+                            <div class="slides-img-2 fade">
+                                <img class="slider-img" src="./assets/img/slide_2.jpg" alt="">
+                            </div>
+                            <div class="slides-img-2 fade">
+                                <img class="slider-img" src="./assets/img/slide_4.jpg" alt="">
+                            </div>
+                            <div class="slides-img-2 fade">
+                                <img class="slider-img" src="./assets/img/best_tour_3.jpg" alt="">
+                            </div>
                         </div>
                         <div class="slider-btn-left">
-                            <span>
+                            <a class="prev" onclick="plusSlides(-1)">
                                 <i class="slider-icon-left fal fa-angle-left"></i>
-                            </span>
+                            </a>
                         </div>
                         <div class="slider-btn-right">
-                            <span>
+                            <a class="next" onclick="plusSlides(1)">
                                 <i class="slider-icon-right fal fa-angle-right"></i>
-                            </span>
+                            </a>
                         </div>
                     </div>
-                    <div class="row mt-130 chart">
-                        <div class="col l-4">
+                    <div class="row mt-130-90 chart">
+                        <div class="col l-4 c-12">
                             <img class="chart-img" src="./assets/img/go.png" alt="">
                         </div>
-                        <div class="col l-8">
+                        <div class="col l-8 c-12">
                             <div class="chart-content">
                                 <h2 class="chart-heading">Our Popular Tours</h2>
                                 <h5 class="chart-des">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viver ra nulla ut metus varius laoreet. Quisque rutrum.</h5>
@@ -340,19 +376,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-130 field-img">
+                    <div class="row mt-130-90 field-img">
                     </div>
 
-                    <div class="row mt-130 tour-price-list">
+                    <div class="row mt-130-90 tour-price-list">
                         <div class="tour-title-holder">
                             <h2 class="tour-holder-heading">The Best Tours</h2>
                             <h5 class="tour-holder-des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis</h5>
                         </div>
                         <div class="list-tour">
                             <div class="row list-wrapper">
-                                <div class="col l-3">
+                                <div class="col l-3 m-6 c-12">
                                     <div class="list-img">
-                                        <a href="" class="tour-img-link">
+                                        <a href="#" class="tour-img-link">
                                             <img src="./assets/img/best_tour_1.jpg" alt="">
                                             <div class="blur"></div>
                                             <div class="tour-des">
@@ -362,7 +398,7 @@
                                         </a>
                                     </div>
                                     <div class="list-img">
-                                        <a href="" class="tour-img-link">
+                                        <a href="#" class="tour-img-link">
                                             <img src="./assets/img/best_tour_5.jpg" alt="">
                                             <div class="blur"></div>
                                             <div class="tour-des">
@@ -372,9 +408,9 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col l-3">
+                                <div class="col l-3 m-6 c-12">
                                     <div class="list-img">
-                                        <a href="" class="tour-img-link">
+                                        <a href="#" class="tour-img-link">
                                             <img src="./assets/img/best_tour_2.jpg" alt="">
                                             <div class="blur"></div>
                                             <div class="tour-des">
@@ -384,7 +420,7 @@
                                         </a>
                                     </div>
                                     <div class="list-img">
-                                        <a href="" class="tour-img-link">
+                                        <a href="#" class="tour-img-link">
                                             <img src="./assets/img/best_tour_6.jpg" alt="">
                                             <div class="blur"></div>
                                             <div class="tour-des">
@@ -394,9 +430,9 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col l-3">
+                                <div class="col l-3 m-6 c-12">
                                     <div class="list-img">
-                                        <a href="" class="tour-img-link">
+                                        <a href="#" class="tour-img-link">
                                             <img class="img-2-row" src="./assets/img/best_tour_3.jpg" alt="">
                                             <div class="blur"></div>
                                             <div class="tour-des">
@@ -406,9 +442,9 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col l-3">
+                                <div class="col l-3 m-6 c-12">
                                     <div class="list-img">
-                                        <a href="" class="tour-img-link">
+                                        <a href="#" class="tour-img-link">
                                             <img src="./assets/img/best_tour_4.jpg" alt="">
                                             <div class="blur"></div>
                                             <div class="tour-des">
@@ -418,7 +454,7 @@
                                         </a>
                                     </div>
                                     <div class="list-img">
-                                        <a href="" class="tour-img-link">
+                                        <a href="#" class="tour-img-link">
                                             <img src="./assets/img/best_tour_7.jpg" alt="">
                                             <div class="blur"></div>
                                             <div class="tour-des">
@@ -432,23 +468,23 @@
                         </div>
                     </div>
 
-                    <div class="row mt-130 wine-data">
-                        <div class="col l-3">
+                    <div class="row mt-130-90 wine-data">
+                        <div class="col l-3 m-6 c-12">
                             <h1>45</h1>
                             <h3>Glasses of Wine</h3>
                             <p>Cap at perspic iatis unde omnis iste natus error sit volup tatem</p>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-6 c-12">
                             <h1>126</h1>
                             <h3>Years of experience</h3>
                             <p>Sop ut perspic iatis ande emnis iste natus error sit volup fatom</p>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-6 c-12">
                             <h1>452</h1>
                             <h3>Unique Wines</h3>
                             <p>Sed ut perspic iatis unde omnis iste natus error sit volup tatem</p>
                         </div>
-                        <div class="col l-3">
+                        <div class="col l-3 m-6 c-12">
                             <h1>247</h1>
                             <h3>Sorts of Wine</h3>
                             <p>Cap of qerspic iatis ande umnis lcte natus error sit volup fatem</p>
@@ -456,9 +492,9 @@
                     </div>
 
 
-                    <div class="row mt-130 video-wine">
+                    <div class="row mt-130-90 video-wine">
                         <div class="video-img">
-                            <img src="./assets/img/family.jpg" alt="family" class="img-family">
+                            <div alt="family" class="img-family"></div>
                         </div>
                         <a href="https://vimeo.com/127347999" class="video-btn-play-img">
                             <span class="video-btn-inner">
@@ -468,7 +504,7 @@
                     </div>
 
                     
-                    <div class="row mt-130 popular-tours">
+                    <div class="row mt-130-90 popular-tours">
                         <div class="col l-7">
                             <div class="popular-tours-holder">
                                 <h1 class="popular-tours-heading">Our Popular Tours</h1>
@@ -519,22 +555,22 @@
             </div>
         </main>
 
-        <footer id="footer" class="mt-130">
+        <footer id="footer" class="mt-130-90">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-3">
+                    <div class="col l-3 m-6 c-12">
                         <div class="logo-footer">
                             <a href="#"><img src="./assets/img/logo.png" alt=""></a>
                             <p class="logo-des">Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae</p>
                         </div>
                         <div class="footer-info">
-                            <a href="" class="info-icon-link"><i class="info-icon far fa-envelope"></i>setsail@qode.com</a>
-                            <a href="" class="info-icon-link"><i class="info-icon fas fa-phone-alt"></i>1 562 867 5309</a>
-                            <a href="" class="info-icon-link"><i class="info-icon fal fa-map-marker-alt"></i>Broadway & Morris St, New York</a>
+                            <a href="#" class="info-icon-link"><i class="info-icon far fa-envelope"></i>setsail@qode.com</a>
+                            <a href="#" class="info-icon-link"><i class="info-icon fas fa-phone-alt"></i>1 562 867 5309</a>
+                            <a href="#" class="info-icon-link"><i class="info-icon fal fa-map-marker-alt"></i>Broadway & Morris St, New York</a>
                         </div>
                     </div>
-                    <div class="col l-3">
-                        <div class="recent-post">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="recent-post mt-50">
                             <h3>Our Recent Posts</h3>
                             <div class="recent-post-location-date">
                                 <p class="footer-location">Visit Thailand, Bali and China</p>
@@ -550,8 +586,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-3">
-                        <div class="newsletter">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="newsletter mt-50">
                             <h3>Subscribe to our Newsletter</h3>
                             <p>Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</p>
                         </div>
@@ -567,8 +603,8 @@
                             <button class="subscribe-btn">SUBSCRIBE</button>
                         </form>
                     </div>
-                    <div class="col l-3">
-                        <div class="our-instagram">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="our-instagram mt-50">
                             <h3>Our Instagram</h3>
                             <p>Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</p>
                         </div>
@@ -579,12 +615,80 @@
             
             <div class="footer-bottom">
                 <div class="grid wide">
-                    <p>Powered by @ <a href="">Qode Interactive 2018</a></p>
+                    <p>Powered by @ <a href="#">Qode Interactive 2018</a></p>
                 </div>
             </div>
         </footer>
 
 
+        <div class="modal">
+            <div class="modal-container">
+                <header class="modal-header">
+                    <div class="modal-login">LOGIN</div>
+                    <div class="modal-register">REGISTER</div>
+                </header>
+                <div class="auth-form">
+                    <div class="modal-body">
+                        <h3 class="modal-body-header">Sign In Here!</h3>
+                        <p class="modal-body-des">Log into your account in just a few simple steps</p>
+    
+                        <form action="" class="modal-form-control">
+                            <div class="modal-input">
+                                <input type="text" name="" id="modal-login-name" class="modal-input-control" required placeholder="User Name">
+                                <i class="modal-icon-form far fa-user"></i>
+                            </div>
+                            <div class="modal-input">
+                                <input type="password" name="" id="modal-login-password" class="modal-input-control" required placeholder="Password">
+                                <i class="modal-icon-form fal fa-lock-alt"></i>
+                            </div>
+    
+                            <label for="modal-checkbox" class="modal-remember-label">
+                                <input type="checkbox" name="" id="modal-checkbox" class="modal-remember">
+                                <span class="checkmark"></span>
+                                <span class="modal-checkbox-text">Remember me</span>
+                            </label>
+    
+                            <a href="" class="forgot-pass">Lost Your Password?</a>
+    
+                            <button class="modal-signin-btn">SIGN IN</button>
+                            <p class="modal-signin-social-des">Sign in with Facebook or Google+</p>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="fb-modal">FACEBOOK</button>
+                        <button class="gg-modal">GOOGLE+</button>
+                    </div>
+                </div>
+
+                <div class="auth-form">
+                    <div class="modal-body">
+                        <h3 class="modal-body-header">Register Now!</h3>
+                        <p class="modal-body-des">Join the SetSail community today & set up a free account.</p>
+    
+                        <form action="" class="modal-form-control">
+                            <div class="modal-input">
+                                <input type="text" name="" id="modal-regis-name" class="modal-input-control" required placeholder="User Name">
+                                <i class="modal-icon-form far fa-user"></i>
+                            </div>
+                            <div class="modal-input">
+                                <input type="email" name="" id="modal-regis-email" class="modal-input-control" required placeholder="Email">
+                                <i class="modal-icon-form far fa-envelope"></i>
+                            </div>
+                            <div class="modal-input">
+                                <input type="password" name="" id="modal-regis-password" class="modal-input-control" required placeholder="Password">
+                                <i class="modal-icon-form fal fa-lock-alt"></i>
+                            </div>
+                            <div class="modal-input">
+                                <input type="password" name="" id="modal-regis-repeat-password" class="modal-input-control" required placeholder="Repeat Password">
+                                <i class="modal-icon-form fal fa-lock-alt"></i>
+                            </div>
+    
+                            <button class="modal-regis-btn">REGISTER</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <div class="back-to-top">
@@ -604,6 +708,166 @@
             chartPercent[i].textContent = chartProgressBarContent[i].getAttribute('data-percentage') + '%'
             chartProgressBarContent[i].style.width = chartProgressBarContent[i].getAttribute('data-percentage') + '%'
         }
+
+
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        const $ = document.querySelector.bind(document)
+        const $$ = document.querySelectorAll.bind(document)
+
+        const header = document.getElementById('header')
+
+        let prevScrollpos = window.pageYOffset
+        window.onscroll = () => {
+            let currentScrollPos = window.pageYOffset
+            if (prevScrollpos > currentScrollPos) {
+                header.style.top = "0"
+            } else {
+                
+                if(mobileNav.style.display == 'block') {
+                    header.style.top = '0'
+                }
+                else {
+                    header.style.top = "-70px"
+                }
+            }
+            prevScrollpos = currentScrollPos
+        }
+
+        
+
+        const mobileMenuIcon = $('.mobile-menu-icon')
+        const mobileNav = $('.mobile-nav')
+        const navLinks = $$('.nav-link')
+        const subNavLists = $$('.subnav-list')
+        const subNavItems = $$('.subnav-item')
+        const subSubNavLists = $$('.sub-subnav-list')
+        const subNavLinks = $$('.subnav-link.has-sub-subnav')
+        const navIconAngle = $$('.nav-icon-angle')
+        const subNavIconAngle = $$('.subnav-icon-angle')
+
+        function menuClicked() {
+            if (mobileNav.style.display === "block") {
+                mobileNav.style.display = "none"
+
+            } else {
+                mobileNav.style.display = "block"
+            }
+        }
+
+        for(let i = 0; i < navLinks.length-1; i++) {
+            navLinks[i].addEventListener('click', () => {
+                if(subNavLists[i].style.display === 'block') {
+                    subNavLists[i].style.display = 'none'
+                    navIconAngle[i].style.transform = 'none'
+                }
+                else {
+                    subNavLists[i].style.display = 'block'
+                    navIconAngle[i].style.transform = 'rotate(90deg)'
+                }
+            })
+        }
+
+        
+        for(let i = 0; i < subNavLinks.length; i++) {
+            subNavLinks[i].addEventListener('click', () => {
+                if(subSubNavLists[i].style.display === 'block') {
+                    subSubNavLists[i].style.display = 'none'
+                    subNavIconAngle[i].style.transform = 'none'
+                }
+                else {
+                    subSubNavLists[i].style.display = 'block'
+                    subNavIconAngle[i].style.transform = 'rotate(90deg)'
+
+                }
+            })
+        }
+
+
+        // Slider IMG
+        let slide1Index = 1
+        let slide2Index = 1
+        showSlides(slide1Index)
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slide1Index += n)
+            showSlides(slide2Index += n)
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slide1Index = n)
+            showSlides(slide2Index = n)
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides1 = document.getElementsByClassName("slides-img-1")
+            let slides2 = document.getElementsByClassName("slides-img-2")
+            // if (n > slides1.length) {
+            //     slide1Index = 1
+            //     slide2Index = 1
+            // }
+            // if (n < 1) {
+            //     slide1Index = slides1.length
+            //     slide2Index = slides2.length
+            // }
+            slide1Index++
+            slide2Index++
+            if (slide1Index > slides1.length) {slide1Index = 1}    
+            if (slide2Index > slides2.length) {slide2Index = 1}    
+            for (i = 0; i < slides1.length; i++) {
+                slides1[i].style.display = "none"
+                slides2[i].style.display = "none"
+            }
+            slides1[slide1Index-1].style.display = "block"
+            slides2[slide2Index-1].style.display = "block"
+            
+            
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+
+
+
+        // Modal sign in
+        const modal = $('.modal')
+        const userLogin = $('.user-login')
+        const modalContainer = $('.modal-container')
+        const authForms = $$('.auth-form')
+        const modalLogin = $('.modal-login')
+        const modalRegister = $('.modal-register')
+
+        userLogin.addEventListener('click', () => {
+            modal.classList.add('open')
+        })
+
+        modal.addEventListener('click', () => {
+            modal.classList.remove('open')
+        })
+
+        modalContainer.addEventListener('click', (e) => {
+            e.stopPropagation()
+        })
+
+        authForms[0].style.display = 'block'
+
+
+
+        modalRegister.addEventListener('click', () => {
+            authForms[0].style.display = 'none'
+            authForms[1].style.display = 'block'
+            modalLogin.style.backgroundColor = '#3abdc1'
+            modalRegister.style.backgroundColor = 'var(--primary-color)'
+        })
+
+
+        
+        modalLogin.addEventListener('click', () => {
+            authForms[1].style.display = 'none'
+            authForms[0].style.display = 'block'
+            modalRegister.style.backgroundColor = '#3abdc1'
+            modalLogin.style.backgroundColor = 'var(--primary-color)'
+        })
     </script>
 
 </body>
