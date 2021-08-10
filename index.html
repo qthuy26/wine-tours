@@ -305,8 +305,8 @@
     
                 <div class="content">
                     <div class="row slider">
-                        <div class="col l-8 m-8 c-12">
-                            <div class="slides-img-1 fade">
+                        <div class="col l-8 m-8 c-12 slides">
+                            <div class="slides-img-1 fade main">
                                 <img class="slider-img" src="./assets/img/slide_1.jpg" alt="">
                             </div>
                             <div class="slides-img-1 fade">
@@ -316,8 +316,8 @@
                                 <img class="slider-img" src="./assets/img/slide_5.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col l-4 m-4 c-12">
-                            <div class="slides-img-2 fade">
+                        <div class="col l-4 m-4 c-12 slides">
+                            <div class="slides-img-2 fade main">
                                 <img class="slider-img" src="./assets/img/slide_2.jpg" alt="">
                             </div>
                             <div class="slides-img-2 fade">
@@ -328,12 +328,12 @@
                             </div>
                         </div>
                         <div class="slider-btn-left">
-                            <a class="prev" onclick="plusSlides(-1)">
+                            <a class="prev">
                                 <i class="slider-icon-left fal fa-angle-left"></i>
                             </a>
                         </div>
                         <div class="slider-btn-right">
-                            <a class="next" onclick="plusSlides(1)">
+                            <a class="next">
                                 <i class="slider-icon-right fal fa-angle-right"></i>
                             </a>
                         </div>
@@ -784,48 +784,48 @@
 
 
         // Slider IMG
-        let slide1Index = 1
-        let slide2Index = 1
-        showSlides(slide1Index)
+        const prev = document.querySelector('.slider-btn-left')
+        const next = document.querySelector('.slider-btn-right')
+        const images1 = document.querySelectorAll('.slides')[0].children
+        const images2 = document.querySelectorAll('.slides')[1].children
+        const totalImages = images1.length
+        let index = 0;
 
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slide1Index += n)
-            showSlides(slide2Index += n)
-        }
+        prev.addEventListener('click', () => {
+            nextImage('prev')
+        })
 
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slide1Index = n)
-            showSlides(slide2Index = n)
-        }
+        next.addEventListener('click', () => {
+            nextImage('next')
+        })
 
-        function showSlides(n) {
-            let i;
-            let slides1 = document.getElementsByClassName("slides-img-1")
-            let slides2 = document.getElementsByClassName("slides-img-2")
-            // if (n > slides1.length) {
-            //     slide1Index = 1
-            //     slide2Index = 1
-            // }
-            // if (n < 1) {
-            //     slide1Index = slides1.length
-            //     slide2Index = slides2.length
-            // }
-            slide1Index++
-            slide2Index++
-            if (slide1Index > slides1.length) {slide1Index = 1}    
-            if (slide2Index > slides2.length) {slide2Index = 1}    
-            for (i = 0; i < slides1.length; i++) {
-                slides1[i].style.display = "none"
-                slides2[i].style.display = "none"
+        function nextImage(direction) {
+            if(direction == 'next') {
+                index++
+                if(index == totalImages) {
+                    index = 0
+                }
+            } 
+            else {
+                if(index == 0) {
+                    index = totalImages - 1
+                } 
+                else {
+                    index--
+                }
             }
-            slides1[slide1Index-1].style.display = "block"
-            slides2[slide2Index-1].style.display = "block"
-            
-            
-            setTimeout(showSlides, 5000); // Change image every 2 seconds
+
+            for(let i = 0; i < images1.length; i++) {
+                images1[i].classList.remove('main')
+                images2[i].classList.remove('main')
+            }
+            images1[index].classList.add('main')
+            images2[index].classList.add('main')
         }
+        
+        setInterval(function() {
+            nextImage('next')
+        }, 5000);
 
 
 

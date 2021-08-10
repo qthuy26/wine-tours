@@ -439,6 +439,11 @@ html {
     display: none;
 }
 
+.content .slides-img-1.main,
+.content .slides-img-2.main {
+    display: block;
+}
+
 .content .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
