@@ -20,6 +20,19 @@ html {
 
 
 
+@-webkit-keyframes dropDown {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+
+
 @keyframes dropDown {
     0% {
         opacity: 0;
@@ -27,6 +40,15 @@ html {
     }
     100% {
         opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@-webkit-keyframes dropDownNoOpacity {
+    0% {
+        transform: rotateX(-90deg);
+    }
+    100% {
         transform: rotateX(0);
     }
 }
@@ -134,18 +156,19 @@ html {
     padding: calc(var(--header-height)/3) 43px;
     left: 0;
     font-weight: 600;
-    opacity: 0;
+    opacity: 0.4;
     visibility: hidden;
     cursor: default;
-    transition: opacity 0.2s linear, max-height 0.2s linear;
     z-index: 1;
     max-height: 0;
+    transition: all 0.2s linear;
 }
 
 #header .lang-switcher:hover .lang-switcher-list {
     visibility: visible;
     opacity: 1;
     max-height: 200px;
+    transition: all 0.2s linear;
 }
 
 #header .lang-switcher-link {
@@ -258,9 +281,10 @@ html {
     display: none;
     background-color: #fff;
     transform-origin: top center;
-    animation: dropDown 0.4s ease-in-out;
     list-style: none;
     z-index: 1;
+    -webkit-animation: dropDown 0.4s ease-in-out;
+            animation: dropDown 0.4s ease-in-out;
 }
 
 #nav .nav-item:hover .subnav-list,
@@ -326,7 +350,8 @@ html {
     margin-left: 100%;
     display: none;
     background-color: #fff;
-    animation: fade 0.3s ease-in;
+    -webkit-animation: fade 0.3s ease-in;
+            animation: fade 0.3s ease-in;
     z-index: 1;
 }
 
@@ -368,7 +393,8 @@ html {
     left: -5px;
     display: none;
     transform-origin: top center;
-    animation: dropDown 0.4s ease-in-out;
+    -webkit-animation: dropDown 0.4s ease-in-out;
+            animation: dropDown 0.4s ease-in-out;
     list-style: none;
 }
 
@@ -464,7 +490,10 @@ html {
     padding: 7.5px 20px;
     transition: all ease-in-out 0.1s;
     top: 50%;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .content .slider-btn-left:hover,
@@ -541,6 +570,11 @@ html {
     color: var(--text-color);
     font-size: 1.4rem;
     font-weight: 700;
+    visibility: hidden;
+}
+
+.content .chart-percent.is-visible {
+    visibility: visible;
 }
 
 .content .chart-progress-bar {
@@ -551,10 +585,12 @@ html {
 }
 
 .content .chart-progress-bar-content {
-    width: 76%;
+    width: 10%;
     height: 100%;
     background-color: var(--primary-color);
     position: relative;
+    transition: width ease 2s;
+    will-change: width;
 }
 
 .content .chart-progress-bar-content::before {
@@ -650,7 +686,8 @@ html {
 
 .content .blur {
     background-color: rgba(0 0 0 / 15%);
-    filter: blur(6px);
+    -webkit-filter: blur(6px);
+            filter: blur(6px);
     width: 100%;
     height: 70px;
     position: absolute;
@@ -751,6 +788,8 @@ html {
 .content .popular-tours .popular-wine-img {
     position: relative;
     left: 20%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -766,7 +805,8 @@ html {
 #footer .logo-footer img {
     width: 263px;
     height: 84px;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 #footer .logo-footer .logo-des {
@@ -842,6 +882,26 @@ html {
     border: none;
 }
 
+#footer .form-control::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+#footer .form-control::-moz-placeholder {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+#footer .form-control:-ms-input-placeholder {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+#footer .form-control::-ms-input-placeholder {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
 #footer .form-control::placeholder {
     color: #fff;
     font-size: 1.4rem;
@@ -913,7 +973,6 @@ html {
 
 .back-to-top:hover {
     background-color: var(--primary-color);
-    /* cursor: pointer; */
 }
 
 .back-to-top:hover a{
@@ -948,7 +1007,8 @@ html {
     justify-content: center;
     align-items: center;
     display: none;
-    animation: fade ease-in-out 0.2s;
+    -webkit-animation: fade ease-in-out 0.2s;
+            animation: fade ease-in-out 0.2s;
 }
 
 .modal.open {
@@ -1019,6 +1079,22 @@ html {
     color: #fff;
     border: none;
     margin: 3px 0;
+}
+
+.modal-input-control::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.modal-input-control::-moz-placeholder {
+    color: #fff;
+}
+
+.modal-input-control:-ms-input-placeholder {
+    color: #fff;
+}
+
+.modal-input-control::-ms-input-placeholder {
+    color: #fff;
 }
 
 .modal-input-control::placeholder {
@@ -1176,5 +1252,6 @@ html {
 
 .fb-modal:hover,
 .gg-modal:hover {
-    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
 }
