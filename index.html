@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/glightbox.min.css">
 </head>
 <body>
     <div id="app">
@@ -492,11 +493,11 @@
                     </div>
 
 
-                    <div class="row mt-130-90 video-wine">
+                    <div class="glightbox row mt-130-90 video-wine">
                         <div class="video-img">
                             <div alt="family" class="img-family"></div>
                         </div>
-                        <a href="https://vimeo.com/127347999" class="video-btn-play-img">
+                        <a href="#" class="video-btn-play-img">
                             <span class="video-btn-inner">
                                 <img src="./assets/img/video-play-btn.png" alt="button play" class="video-btn-img">
                             </span>
@@ -744,6 +745,18 @@
         })
         
         
+    </script>
+
+    <script src="./assets/js/glightbox.min.js"></script>
+
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            'href': 'https://vimeo.com/127347999',
+            'type': 'video',
+            'source': 'vimeo', //vimeo, youtube or local
+            'width': 900,
+            'autoplayVideos': true,
+        });
     </script>
 
 </body>
