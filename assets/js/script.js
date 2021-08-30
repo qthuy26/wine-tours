@@ -87,6 +87,12 @@ const images2 = document.querySelectorAll('.slides')[1].children
 const totalImages = images1.length
 let index = 0;
 
+
+images1[index].classList.add('show')
+images2[index].classList.add('show')
+
+index++
+
 prev.addEventListener('click', () => {
     nextImage('prev')
     clearInterval(interval)
