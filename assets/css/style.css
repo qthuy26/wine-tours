@@ -465,8 +465,8 @@ html {
     display: none;
 }
 
-.content .slides-img-1.main,
-.content .slides-img-2.main {
+.content .slides-img-1.show,
+.content .slides-img-2.show {
     display: block;
 }
 

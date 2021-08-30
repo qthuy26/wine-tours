@@ -89,10 +89,18 @@ let index = 0;
 
 prev.addEventListener('click', () => {
     nextImage('prev')
+    clearInterval(interval)
+    interval = setInterval(() => {
+        nextImage('next')
+    }, 5000);
 })
 
 next.addEventListener('click', () => {
     nextImage('next')
+    clearInterval(interval)
+    interval = setInterval(() => {
+        nextImage('next')
+    }, 5000);
 })
 
 function nextImage(direction) {
@@ -112,14 +120,14 @@ function nextImage(direction) {
     }
 
     for(let i = 0; i < images1.length; i++) {
-        images1[i].classList.remove('main')
-        images2[i].classList.remove('main')
+        images1[i].classList.remove('show')
+        images2[i].classList.remove('show')
     }
-    images1[index].classList.add('main')
-    images2[index].classList.add('main')
+    images1[index].classList.add('show')
+    images2[index].classList.add('show')
 }
 
-setInterval(function() {
+var interval = setInterval(() => {
     nextImage('next')
 }, 5000);
 
